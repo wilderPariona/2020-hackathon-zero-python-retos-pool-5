@@ -21,13 +21,10 @@ def quienGana(player, ai):
 
 # Entry Point
 def Game():
-    #
-    #
-    player_option = input("ingrese su opción : ")
-    #
-    #
+    player = input("ingrese su opción : ")
+    ai = options[randint(0,2)]
 
-    winner = quienGana(player_option, options[randint(0,2)])
+    winner = quienGana(player, ai)
 
     print(winner)
 
